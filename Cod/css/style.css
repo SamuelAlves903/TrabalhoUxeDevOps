@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid black;    
+}
+
+nav {
+    display: inline-flex;
+    padding: 0px 400px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 3px 60px;;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    width: 106px;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #343faa;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    background: #343faa;
+    width: 138px;
+}
+
+.fa-user:before {
+ color: black;
+}
+
+.fa-cog:before, .fa-gear:before {
+    color: black;
+}
+
+#dropdownSenha {
+    width: 200px;
+}
+
+#divBusca {
+    border:solid 3px #343faa;
+    border-radius:5px;
+    width:255px;
+    height: 36px;
+}
+  
+.txtBusca {
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:200px;
+}
+
+.botao {
+    border: solid 3px #343faa;
+    height:32px;
+    width: 50px;
+    display: block;
+
+}
