@@ -30,6 +30,7 @@ nav {
     display: flex;
     align-items: center;
     margin-right: 20px;
+    border: solid #343faa;
 }
 
 .txtBusca {
@@ -41,7 +42,8 @@ nav {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
+    border: solid #343faa;
 }
 
 nav ul {
@@ -49,6 +51,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 25px;
 }
 
 nav ul li {
@@ -57,7 +60,7 @@ nav ul li {
 
 .divTxt {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     border: solid black;
     background: white;
 }
@@ -87,6 +90,24 @@ img {
     margin: 0 auto;
 }
 
+.divTxt:last-of-type {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: solid black;
+    background: white;
+}
+
+#infoTxt {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: 0;
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -103,5 +124,28 @@ img {
 
     nav ul li {
         margin: 0 10px;
+    }
+
+    .divTxt h1 {
+        font-size: 20px;
+    }
+
+    .divTxt h4 {
+        font-size: 16px;
+    }
+
+    #infoTxt {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    #infoTxt h1 {
+        font-size: 20px;
+    }
+
+    #infoTxt h4 {
+        font-size: 16px;
     }
 }
