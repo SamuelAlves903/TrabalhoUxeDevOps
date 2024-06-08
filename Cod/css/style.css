@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: OpenSans, sans-serif;
+}
+
+.cor {
+    background: lightgray;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: solid black;
+}
+
+header a img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#divBusca {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.txtBusca {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.divTxt {
+    padding: 20px;
+    text-align: center;
+    border: solid black;
+    background: white;
+}
+
+.divTxt h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.divTxt h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.propaganda {
+    margin: 50px;
+}
+
+.noticia {
+    width: 600px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #divBusca {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
