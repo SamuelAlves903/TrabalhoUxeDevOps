@@ -9,6 +9,7 @@
     <title>Umuarama News</title>
 </head>
 <body class="cor">
+
     <header>
         <a href="TelaPrincipalUsuario.html" title="Umuarama News">
             <img src="img/image-logo.png" alt="Umuarama News" width="200px">
@@ -22,45 +23,38 @@
             <ul>
                 <li>
                     <div class="grid">
-                        <div class="coluna1">
+                        <div class="coluna">
                             <i class="fa-regular fa-user"></i>
                         </div>
                         <div class="coluna2">
                             <i class="fa-solid fa-gear"></i>
                         </div>
                     </div>
-                    
-                    <h5>Atualização de senha</h5>
-                    <h5>Sair do sistema</h5>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="divTxt" id="infoTxt">
-            <h1>
-                Saúde vascular no outono: 
-                fique atento às mudanças 
-                bruscas de temperatura
-            </h1>
-            <h4>
-                O médico vascular Dr. Gustavo Marcatto fala sobre os problemas que podem surgir com as alterações radicais do clima e dá dicas que podem ajudar a proteger e manter o bem-estar.
-            </h4>
-        </div>
-    
-        <a href="#" class="propaganda">
-            <img src="img/image-propaganda.png" alt="Propaganda">
-        </a>
-    
-        <div class="divTxt">
-            <h1>
-                PEC polêmica
-            </h1>
-            <h1><a href="https://g1.globo.com/politica/noticia/2024/05/31/entenda-o-que-diz-a-pec-das-praias-sobre-temas-como-privatizar-a-beira-mar-e-legalizar-o-complexo-da-mare.ghtml">Privatização das praias? 
-                Entenda proposta discutida no Senado</a> 
-            </h1>
-            
-            <img src="img/image-noticia.png" alt="noticia" class="noticia">
+        <div class="gridCadastro">
+            <form action="">
+                <h1>CADASTRO</h1>
+                <label for="nome" t>Nome completo *</label>
+                <input type="text" name="nome" class="form" id="nome" placeholder="Nome e sobrenome">
+
+                <label for="email">E-mail *</label>
+                <input type="email" name="email" class="form" id="email" placeholder="umuaramanews@gmail.com">
+
+                <label for="nome">Nome de Usuário *</label>
+                <input type="text" name="nome" class="form" id="nomeUsuario" placeholder="Insira um nome">
+
+                <label for="senha">Senha *</label>
+                <input type="password" name="senha" class="form" id="senha" placeholder="Pelo menos 6 caracteres">
+
+                <label for="senha">Confirmar senha</label>
+                <input type="password" name="senha" class="form" id="confirmarSenha" placeholder="Insira a senha novamente">
+
+                <button type="submit" class="btn">Criar</button>
+            </form>
         </div>
     </main>
 </body>
