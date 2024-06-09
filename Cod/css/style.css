@@ -252,11 +252,52 @@ img {
 }
 
 .divTxt h1 a {
-    color: #343faa;
+    color: #343faa;     
 }
 
 #divTxt h1 a {
     color: #343faa;
+}
+
+.gridCadastro {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border: solid black;
+    margin: 50px auto 0px; 
+}
+
+.gridCadastro form {
+    display: grid;
+    gap: 15px; 
+}
+
+.gridCadastro form h1 {
+    text-align: center;
+}
+
+.gridCadastro form label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.gridCadastro form input {
+    width: 100%; 
+    border-radius: 4px;
+    border: solid lightgray;
+    padding: 10px; 
+}
+
+.gridCadastro form button {
+    border: none;
+    background: #343faa;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -294,7 +335,6 @@ img {
         font-size: 30px;
     }
 
-
     .divTxt h4 {
         font-size: 16px;
     }
@@ -303,11 +343,11 @@ img {
         font-size: 20px;
     }
 
-    .grid2 .h4a {
+    .grid2 .h4a h4 {
         font-size: 16px;
     }
 
-    .grid2 .h4b {
+    .grid2 .h4b h4 {
         font-size: 16px;
     }
 
@@ -332,4 +372,19 @@ img {
         padding: 10px;
         text-align: left;
     }
+
+    .gridCadastro {
+        max-width: 90%; 
+        margin: 20px auto; 
+        padding: 15px; 
+    }
+
+    .gridCadastro form input, .gridCadastro form button {
+        font-size: 1rem;
+        padding: 8px; 
+    }
+
+    .gridCadastro form label {
+        font-size: 1rem;
+    }   
 }
