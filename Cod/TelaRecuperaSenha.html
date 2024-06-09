@@ -11,7 +11,7 @@
 <body class="cor">
 
     <header>
-        <a href="" title="Umuarama News">
+        <a href="TelaPrincipalUsuario.html" title="Umuarama News">
             <img src="img/image-logo.png" alt="Umuarama News" width="200px">
         </a>
 
@@ -22,31 +22,69 @@
             </div>
             <ul>
                 <li>
-                    <i class="fa-regular fa-user"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-gear"></i>
+                    <div class="grid">
+                        <div class="coluna">
+                            <a href="TelaPrincipalUsuario.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
+                        <div class="coluna2">
+                            <a href="TelaPrincipalConfiguracao.html"><i class="fa-solid fa-gear"></i></a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="card-container">
-        <div class="container">
-            <h1>RECUPERAR SENHA</h1>
-            <form action="">
-                <label for="email">Email *</label>
-                <input type="email"
-                class="form-control form-control-lg"
-                name="email"
-                placeholder="jornalumuarama@gmail.com">
-                <br>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
-                <br>
-                <br>
-            </form>
+    <main>
+        <div class="gridCadastro">
+            <div class="alert" id="customAlert">
+                E-mail enviado
+            </div>
+                <form action="javascript:void(0);" onsubmit="showAlert()">
+                    <h1>RECUPERAR SENHA</h1>
+                    <label for="email">E-mail *</label>
+                    <input type="email" name="email" class="form" id="email" placeholder="umuaramanews@gmail.com">
+
+                    <button type="submit" class="btn">Enviar</button>
+                    <br>
+                </form>
         </div>
-    </div>
+
+
+    </main>
+
+    <script>
+        function showAlert() {
+            const alert = document.getElementById('customAlert');
+            alert.classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => {
+                alert.classList.remove('show');
+            }, 5000);
+        }
+    </script>
+
+    <style>
+        .alert {
+            display: none;
+            background-color: #343faa;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 3px;
+            width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        .alert.show {
+            display: block;
+        }
+    </style>
 
 </body>
 </html>
