@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: OpenSans, sans-serif;
+}
+
+.cor {
+    background: lightgray;
+}
+
+.cor2 {
+    background: #3e3838;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: solid black;
+}
+
+.header {
+    background-color: black;
+}
+
+header a img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#divBusca {
+    display: flex;
+    align-items: center;
+    margin-right: auto; 
+    margin-left: 20px; 
+    border: solid #343faa;
+}
+
+.txtBusca {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+nav ul li {
+    margin-left: 20px;
+    height: 35px;
+}
+
+nav ul li h5 {
+    background: #343faa;
+    color: white;
+}
+
+.fa-user:before {
+    background-color: transparent;
+    font-size: 30px;
+    border: solid 3px #343faa;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid .coluna2 {
+    margin: 0px 20px;
+}
+
+.divTxt {
+    padding: 20px;
+    text-align: left;
+    border: solid black;
+    background: white;
+}
+
+.divTxt h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.divTxt h1 {
+    font-weight: bold;
+}
+
+.divTxt h1 a {
+    color: #343faa;
+}
+
+.divTxt h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.propaganda {
+    margin: 50px;
+}
+
+.noticia {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.divTxt:last-of-type {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: solid black;
+    background: white;
+}
+
+#infoTxt {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: 0;
+    padding: 20px;
+}
+
+#infoTxt h1 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #divBusca {
+        margin: 10px 0;
+    }
+
+    nav {
+        margin: 10px auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li h5 {
+        font-size: 16px;
+    }
+
+    .divTxt h1 {
+        font-size: 20px;
+    }
+
+    .divTxt h4 {
+        font-size: 16px;
+    }
+
+    #infoTxt {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    #infoTxt h1 {
+        font-size: 20px;
+    }
+
+    #infoTxt h4 {
+        font-size: 16px;
+    }
+}
