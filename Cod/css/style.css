@@ -7,6 +7,10 @@ body {
     background: lightgray;
 }
 
+.cor2 {
+    background: #3e3838;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -14,6 +18,11 @@ header {
     padding: 20px;
     background-color: white;
     border: solid black;
+}
+
+.header {
+    background-color: black;
+    border: solid white;
 }
 
 header a img {
@@ -29,6 +38,8 @@ nav {
 #divBusca {
     display: flex;
     align-items: center;
+    margin-right: auto; 
+    margin-left: 20px; 
     border: solid #343faa;
 }
 
@@ -37,12 +48,28 @@ nav {
     font-size: 16px;
 }
 
+#txtBusca {
+    padding: 5px;
+    font-size: 16px;
+    background-color: black;
+}
+
 .botao {
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 20px;
-    border: solid #343faa;
+}
+
+#botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#botao .fa-magnifying-glass:before, .fa-search:before {
+    color: white;
 }
 
 nav ul {
@@ -61,12 +88,29 @@ nav ul li {
 nav ul li h5 {
     background: #343faa;
     color: white;
+    cursor: pointer;
 }
 
-.fa-user:before {
+.grid .coluna1 .fa-user:before {
     background-color: transparent;
     font-size: 30px;
     border: solid 3px #343faa;
+    cursor: pointer;
+}
+
+.grid #coluna2 .fa-gear:before {
+    background-color: transparent;
+    font-size: 30px;
+    border: solid 3px #343faa;
+    cursor: pointer;    
+}
+
+.fa-gear:before {
+    cursor: pointer; 
+}
+
+.fa-user:before {
+    cursor: pointer;
 }
 
 .grid {
@@ -77,29 +121,48 @@ nav ul li h5 {
     margin: 0px 20px;
 }
 
-.divTxt {
-    padding: 20px;
-    text-align: left;
-    border: solid black;
-    background: white;
+
+.grid #coluna2 {
+    margin: 0px 20px;
 }
 
-.divTxt h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.grid2 {
+    display: flex;
+    text-align: center;
 }
 
-.divTxt h1 {
-    font-weight: bold;
+.grid2 .h4a {
+    background-color: #343faa;
+    color: white;
+    margin: 0px 5px;
+    margin-left: -17px;
+    width: 45px;  
+    cursor: pointer;
 }
 
-.divTxt h1 a {
-    color: #343faa;
+.grid2 .h4b {
+    background-color: #343faa;
+    color: white;
+    width: 44px;
+    cursor: pointer;
 }
 
-.divTxt h4 {
-    font-size: 18px;
-    margin-bottom: 20px;
+.grid3 {
+    width: 44px;
+    margin-left: 33px;
+    text-align: center;
+}
+
+.grid3 .icon1 {
+    background-color: #343faa;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.grid3 .icon2 {
+    background-color: #343faa;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 .propaganda {
@@ -128,12 +191,72 @@ img {
     background: white;
 }
 
-#infoTxt {
+#divTxt:last-of-type {
     max-width: 1200px;
     width: 100%;
-    margin-left: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: solid white;
+    background: black;
+}
+
+.divTxt {
+    max-width: 1200px;
+    width: 100%;
     margin-left: 0;
     padding: 20px;
+    text-align: left;
+    border: solid black;
+    background: white;
+    margin: 30px 0px 0px;
+}
+
+#divTxt {
+    max-width: 1500px;
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    text-align: left;
+    border: solid white;
+    background: black
+}
+
+#divTxt {
+    margin: 30px 0px 0px;
+}
+
+.divTxt h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#divTxt h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.divTxt h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#divTxt h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.divTxt h1 a {
+    color: #343faa;
+}
+
+#divTxt h1 a {
+    color: #343faa;
 }
 
 @media (max-width: 768px) {
@@ -159,26 +282,54 @@ img {
         margin: 0 10px;
     }
 
+    nav ul li h5 {
+        font-size: 16px;
+    }
+
     .divTxt h1 {
         font-size: 20px;
     }
+
+    #divTxt h1 {
+        font-size: 30px;
+    }
+
 
     .divTxt h4 {
         font-size: 16px;
     }
 
-    #infoTxt {
+    #divTxt h4 {
+        font-size: 20px;
+    }
+
+    .grid2 .h4a {
+        font-size: 16px;
+    }
+
+    .grid2 .h4b {
+        font-size: 16px;
+    }
+
+    .grid3 .icon1 {
+        font-size: 16px;
+    }
+
+    .grid3 .icon2 {
+        font-size: 16px;
+    }
+
+    .divTxt {
         max-width: 100%;
         width: 100%;
         padding: 10px;
         text-align: left;
     }
 
-    #infoTxt h1 {
-        font-size: 20px;
-    }
-
-    #infoTxt h4 {
-        font-size: 16px;
+    #divTxt {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
     }
 }
