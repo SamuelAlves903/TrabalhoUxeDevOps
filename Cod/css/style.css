@@ -107,10 +107,12 @@ nav ul li h5 {
 
 .fa-gear:before {
     cursor: pointer; 
+    color: #3e3838;
 }
 
 .fa-user:before {
     cursor: pointer;
+    color: #3e3838;
 }
 
 .grid {
