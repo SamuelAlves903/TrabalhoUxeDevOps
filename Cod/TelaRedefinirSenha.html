@@ -11,7 +11,7 @@
 <body class="cor">
 
     <header>
-        <a href="" title="Umuarama News">
+        <a href="TelaPrincipalUsuario.html" title="Umuarama News">
             <img src="img/image-logo.png" alt="Umuarama News" width="200px">
         </a>
 
@@ -22,39 +22,69 @@
             </div>
             <ul>
                 <li>
-                    <i class="fa-regular fa-user"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-gear"></i>
+                    <div class="grid">
+                        <div class="coluna">
+                            <a href="TelaPrincipalUsuario.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
+                        <div class="coluna2">
+                            <a href="TelaPrincipalConfiguracao.html"><i class="fa-solid fa-gear"></i></a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="card-container">
-        <div class="container">
-            <h1>REDEFINIR</h1>
-            <h1>SENHA</h1>
-            <form action="">
+    <main>
+        <div class="gridCadastro">
+            <div class="alert" id="customAlert">
+                Senha redefinida com sucesso
+            </div>
+            <form action="javascript:void(0);" onsubmit="showAlert()">
+                <h1>REDEFINIR SENHA</h1>
                 <label for="novasenha">Nova Senha *</label>
-                <input type="text"
-                class="form-control form-control-lg"
-                name="novasenha"
-                placeholder="Pelo menos 6 caracteres">
-                <br>
+                <input type="password" name="novasenha" class="form" id="novasenha" placeholder="Pelo menos 6 caracteres">
 
-                <label for="confirmarsenha">Confirmar Senha *</label>
-                <input type="text"
-                class="form-control form-control-lg"
-                name="confirmarsenha"
-                placeholder="Insira a senha novamente">
-                <br>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
-                <br>
-                <br>
+                <label for="Confirmarsenha">Confirmar Senha *</label>
+                <input type="password" name="confirmarsenha" class="form" id="confirmarsenha" placeholder="Insira a senha novamente">
+
+                <button type="submit" class="btn">Salvar</button>
+
             </form>
         </div>
-    </div>
+    </main>
 
+    <script>
+        function showAlert() {
+            const alert = document.getElementById('customAlert');
+            alert.classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => {
+                alert.classList.remove('show');
+            }, 5000);
+        }
+    </script>
+
+    <style>
+        .alert {
+            display: none;
+            background-color: #343faa;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 3px;
+            width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        .alert.show {
+            display: block;
+        }
+    </style>
 </body>
 </html>
