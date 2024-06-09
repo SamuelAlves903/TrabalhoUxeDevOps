@@ -29,8 +29,6 @@ nav {
 #divBusca {
     display: flex;
     align-items: center;
-    margin-right: auto; 
-    margin-left: 20px; 
     border: solid #343faa;
 }
 
@@ -138,10 +136,6 @@ img {
     padding: 20px;
 }
 
-#infoTxt h1 {
-    font-weight: bold;
-}
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -163,10 +157,6 @@ img {
 
     nav ul li {
         margin: 0 10px;
-    }
-
-    nav ul li h5 {
-        font-size: 16px;
     }
 
     .divTxt h1 {
