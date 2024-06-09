@@ -29,7 +29,6 @@ nav {
 #divBusca {
     display: flex;
     align-items: center;
-    margin-right: 20px;
     border: solid #343faa;
 }
 
@@ -56,6 +55,26 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    height: 35px;
+}
+
+nav ul li h5 {
+    background: #343faa;
+    color: white;
+}
+
+.fa-user:before {
+    background-color: transparent;
+    font-size: 30px;
+    border: solid 3px #343faa;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid .coluna2 {
+    margin: 0px 20px;
 }
 
 .divTxt {
@@ -70,6 +89,14 @@ nav ul li {
     margin-bottom: 10px;
 }
 
+.divTxt h1 {
+    font-weight: bold;
+}
+
+.divTxt h1 a {
+    color: #343faa;
+}
+
 .divTxt h4 {
     font-size: 18px;
     margin-bottom: 20px;
@@ -80,7 +107,8 @@ nav ul li {
 }
 
 .noticia {
-    width: 600px;
+    max-width: 100%;
+    height: auto;
 }
 
 img {
@@ -118,8 +146,13 @@ img {
         margin: 10px 0;
     }
 
+    nav {
+        margin: 10px auto;
+    }
+
     nav ul {
         flex-direction: row;
+        justify-content: center;
     }
 
     nav ul li {
