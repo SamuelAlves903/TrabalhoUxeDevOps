@@ -11,7 +11,7 @@
 <body class="cor">
 
     <header>
-        <a href="" title="Umuarama News">
+        <a href="TelaPrincipalUsuario.html" title="Umuarama News">
             <img src="img/image-logo.png" alt="Umuarama News" width="200px">
         </a>
 
@@ -22,37 +22,36 @@
             </div>
             <ul>
                 <li>
-                    <i class="fa-regular fa-user"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-gear"></i>
+                    <div class="grid">
+                        <div class="coluna">
+                            <a href="TelaPrincipalUsuario.html"><i class="fa-regular fa-user"></i></a>
+                        </div>
+                        <div class="coluna2">
+                            <a href="TelaPrincipalConfiguracao.html"><i class="fa-solid fa-gear"></i></a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="card-container">
-        <div class="container">
-            <h1>LOGIN</h1>
+    <main>
+        <div class="gridCadastro">
             <form action="">
-                <label for="email">Email *</label>
-                <input type="email"
-                class="form-control form-control-lg"
-                name="email"
-                placeholder="jornalumuarama@gmail.com">
-                <br>
+                <h1>LOGIN</h1>
+                <label for="email">E-mail *</label>
+                <input type="email" name="email" class="form" id="email" placeholder="umuaramanews@gmail.com">
 
                 <label for="senha">Senha *</label>
-                <input type="text"
-                class="form-control form-control-lg"
-                name="senha"
-                placeholder="Pelo menos 6 caracteres">
-                <br>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
-                <br>
+                <input type="password" name="senha" class="form" id="senha" placeholder="Pelo menos 6 caracteres">
+
+                <button type="submit" class="btn">Entrar</button>
+
+                <h5 class="esq">Esqueci minha senha</h5>
+                <h5 class="prime-acess">Primeiro Acesso</h5>
                 <br>
             </form>
         </div>
-    </div>
+    </main>
 </body>
 </html>
