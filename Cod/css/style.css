@@ -85,6 +85,10 @@ nav ul li {
     height: 35px;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
 nav ul li h5 {
     background: #343faa;
     color: white;
@@ -306,6 +310,11 @@ img {
     color: #343faa;
     cursor: pointer;
 }
+
+.gridCadastro form a {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
