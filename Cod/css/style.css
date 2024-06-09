@@ -22,6 +22,7 @@ header {
 
 .header {
     background-color: black;
+    border: solid white;
 }
 
 header a img {
@@ -58,6 +59,17 @@ nav {
     border: none;
     cursor: pointer;
     font-size: 20px;
+}
+
+#botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#botao .fa-magnifying-glass:before, .fa-search:before {
+    color: white;
 }
 
 nav ul {
@@ -286,10 +298,6 @@ img {
     padding: 10px 20px; 
     font-size: 1.2rem; 
     cursor: pointer;
-}
-
-#infoTxt h1 {
-    font-weight: bold;
 }
 
 @media (max-width: 768px) {
