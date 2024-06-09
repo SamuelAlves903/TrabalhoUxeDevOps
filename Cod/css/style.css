@@ -302,6 +302,10 @@ img {
     cursor: pointer;
 }
 
+.gridCadastro form h5{
+    color: #343faa;
+    cursor: pointer;
+}
 @media (max-width: 768px) {
     header {
         flex-direction: column;
